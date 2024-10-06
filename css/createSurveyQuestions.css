@@ -1,0 +1,61 @@
+html, body
+{
+    height: 100vh;
+    width: 100%;
+}
+
+.detail-holder
+{
+    width: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.427);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.survey-settings
+{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.settings
+{
+    width: 45%;
+}
+
+.section-holder
+{
+    height: 10%;
+    width: 40%;
+    margin: 20px 0 20px 0;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border-radius: 25px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.section-input
+{
+    width: 60%;
+    border: none;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+.section-button
+{
+    width: 15%;
+    border-radius: 15px;
+    border: none;
+    background: rgb(10, 206, 98);
+    cursor: pointer;
+    transition: all 1s 0.1s ease-in-out;
+}
+
+.section-button:hover
+{
+    background: rgb(6, 151, 71);
+}
