@@ -469,6 +469,34 @@ color: #f1f1f1;
 
 }
 
+.survey-display{
+    margin: 2rem 20rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+
+    border: 1px solid black;
+    border-radius: 25px;
+
+    button{
+        margin: 0 1rem;
+    }
+    .survey-details h1{
+        font-size: 1.75rem;
+        font-weight: var(--font-semibold);
+    }
+
+    .survey-details h2{
+        font-size: 1.5rem;
+        font-weight: var(--font-semibold);
+    }
+
+    .survey-details h3{
+        font-size: 1rem;
+        font-weight: var(--font-regular);
+    }
+}
+
 .survey-container table{
     border: 1px solid black;
     border-radius: 35px;
@@ -478,6 +506,18 @@ color: #f1f1f1;
     form{
         input[type="text"],select{
             border-radius: 20px;
+        }
+    }
+
+    .survey-question{
+        color: #4E4E4E;
+        padding: 2px 5px;
+        h2{
+            font-size: 1.5rem;
+        }
+        h3{
+            font-size: 1rem;
+            color: #dc3545;
         }
     }
 }
