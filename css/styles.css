@@ -172,6 +172,8 @@ a {
     padding-left: calc(var(--nav-width) + 1rem);
 }
 
+
+
 .active {
     color: var(--white-color);
 }
@@ -627,6 +629,54 @@ color: #f1f1f1;
     }
 }
 
+@media screen and (min-width: 1024px){
+
+    .survey-display{
+        margin: 2rem 6rem;
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+    
+        border: 1px solid black;
+        border-radius: 25px;
+    }
+
+    .survey-container {
+        margin: 2rem 6rem;
+      }
+
+    .form-container {
+    margin: 1rem 8rem;
+    }
+}
+
+@media screen and (max-width: 767px){
+    /* Adjust the small logo size */
+    #logo-img {
+        width: 30px; /* Smaller logo for mobile */
+        height: auto;
+        transition: width 0.3s ease;
+    }
+
+    .show #logo-img {
+        width: 30px; /* Keep the small logo when navbar is open */
+    }
+    /* Adjust the profile image size */
+    .nav_img img {
+        width: 20px; /* Smaller profile image for mobile */
+        height: 20px;
+    }
+
+    .nav_img.open img {
+        width: 35px; /* Adjusted size for expanded view */
+        height: 35px;
+    }
+
+    .nav_img.open{
+        justify-content: start;
+        transform: none;
+    }
+}
 /* login and register */
 body {
     margin: 0;

@@ -11,24 +11,26 @@ document.addEventListener("DOMContentLoaded", function(event) {
         // Validate that all variables exist
         if(toggle && nav && bodypd && headerpd){
             toggle.addEventListener('click', () => {
-                // Show/hide navbar
+                // Toggle show class for navbar
                 nav.classList.toggle('show');
                 
-                // Change icon
+                // Change toggle icon
                 toggle.classList.toggle('bx-x');
                 
-                // Add padding to body and header
+                // Adjust body and header padding when navbar is shown
                 bodypd.classList.toggle('body-pd');
                 headerpd.classList.toggle('body-pd');
     
                 // Toggle class for the nav image container
                 navImg.classList.toggle('open');
                 
-                // Change the logo based on the navbar state
-                if (nav.classList.contains('show')) {
-                    logoImg.src = "img/gosurv.png"; // Large logo
+                // Check screen width and adjust the logo accordingly
+                if (window.innerWidth > 767) {
+                    // Mobile screen: small logo when navbar is open
+                    logoImg.src = nav.classList.contains('show') ? "img/gosurv.png" : "img/gosurv_small.png";
                 } else {
-                    logoImg.src = "img/gosurv_small.png"; // Small logo
+                    // Larger screen: change to large logo when navbar is open
+                    logoImg.src = nav.classList.contains('show') ? "img/gosurv_small.png" : "img/gosurv_small.png";
                 }
             });
         }
